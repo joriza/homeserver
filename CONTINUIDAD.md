@@ -38,7 +38,7 @@
 | 3.2 Archivos remotos | Nextcloud (clientes móvil/escritorio) | pendiente |
 | 3.3 Multimedia | Jellyfin | ✅ completo: `http://192.168.1.200:8096`, clientes activos (desktop, celular, Android TV — TV requirió conexión manual del server) |
 | Media carga | Samba share `media`: `\\192.168.1.200\media` (peliculas/series/musica/fotos; lectura anónima, escritura solo javier) | ✅ |
-| 3.4 Media automation | Radarr + Sonarr + Prowlarr + qBittorrent + Bazarr (stack en `/opt/media-stack/docker-compose.yml`) | ✅ contenedores corriendo y UIs activas — config de app (indexadores, perfiles de calidad, API keys entre apps) pendiente |
+| 3.4 Media automation | Radarr + Sonarr + Prowlarr + qBittorrent + Bazarr (stack en `/opt/media-stack/docker-compose.yml`; **fuente de verdad**. La copia local `media-stack-compose.yml` es solo espejo de referencia — cualquier cambio se edita primero en el server y luego se sincroniza acá) | ✅ contenedores corriendo y UIs activas — config de app (indexadores, perfiles de calidad, API keys entre apps) pendiente |
 | 3.5 Apps web públicas | Contenedor por app + Nginx Proxy Manager o Traefik, expuesto por **Cloudflare Tunnel** | pendiente |
 | Backups | Regla 3-2-1 obligatoria (RAID ≠ backup) | transversal |
 
